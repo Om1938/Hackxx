@@ -1,0 +1,8 @@
+.pallete {
+  width: 20vw;
+  max-width: 300px;
+}
+
+.card-height {
+  height: calc(100vh - 270px);
+}

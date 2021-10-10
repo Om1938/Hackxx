@@ -1,0 +1,16 @@
+<div class="quiz-container" animationDuration="2000ms">
+  <mat-tab-group>
+    <mat-tab [label]="quiz.category" *ngFor="let quiz of categorizedquizs">
+      <app-board [questions]="quiz.questions"></app-board>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+
+<mat-card>
+  <div class="d-flex jc-sb">
+    <div><countdown [config]="{ leftTime: 30 * 60 }"></countdown></div>
+    <button mat-raised-button color="primary" (click)="Submit()">
+      Submit Test
+    </button>
+  </div>
+</mat-card>

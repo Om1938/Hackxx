@@ -1,0 +1,65 @@
+<div class="d-flex fd-row">
+  <div class="p-1">
+    <mat-card class="pallete card-height">
+      <div class="d-flex fd-row f-wrap jc-center">
+        <div
+          class="pallette-questions mat-elevation-z8"
+          style="
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+          "
+          *ngFor="let question of questions; index as i"
+          (click)="openQuestion(question, i)"
+        >
+          {{ i + 1 }}
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div style="width: 100%" class="p-1">
+    <mat-card class="card-height">
+      <mat-card class="mat-elevation-z2">
+        {{ selectedQuestion.question }}
+      </mat-card>
+      <div style="height: 50px"></div>
+
+      <mat-radio-group
+        aria-label="Select an option"
+        (change)="changeRadio($event)"
+        [value]="selectedQuestion.selectedOption"
+      >
+        <div *ngFor="let option of selectedQuestion.options">
+          <mat-card class="mat-elevation-z2 my-1"
+            ><mat-radio-button [value]="option.id">
+              {{ option.text }}</mat-radio-button
+            ></mat-card
+          >
+        </div>
+      </mat-radio-group>
+
+      <div class="d-flex jc-sb">
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="previous()"
+          [disabled]="selectedIndex == 0"
+        >
+          Prev
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="next()"
+          [disabled]="selectedIndex == questions.length - 1"
+        >
+          Next
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>

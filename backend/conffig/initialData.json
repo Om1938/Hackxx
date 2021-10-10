@@ -1,0 +1,194 @@
+[
+  {
+    "id": 2,
+    "question": "What kind of language is C?",
+    "options": [
+      {
+        "id": 1,
+        "text": "OOPS"
+      },
+      {
+        "id": 2,
+        "text": "Functional"
+      },
+      {
+        "id": 3,
+        "text": "Procedural"
+      },
+      {
+        "id": 4,
+        "text": "Declarative"
+      }
+    ],
+    "category": "Programming",
+    "marks": 15
+  },
+  {
+    "id": 3,
+    "question": "The average time complexity of an insert operation in a hash set is?",
+    "options": [
+      {
+        "id": 5,
+        "text": "O(NLogn)"
+      },
+      {
+        "id": 6,
+        "text": "O(N)"
+      },
+      {
+        "id": 7,
+        "text": "O(1)"
+      },
+      {
+        "id": 8,
+        "text": "a near constant time as N gets large"
+      }
+    ],
+    "category": "Programming",
+    "marks": 30
+  },
+  {
+    "id": 4,
+    "question": "Which one of the following is a loop construct that will always be executed once?",
+    "options": [
+      {
+        "id": 9,
+        "text": "For"
+      },
+      {
+        "id": 10,
+        "text": "ForEach"
+      },
+      {
+        "id": 11,
+        "text": "Do While"
+      },
+      {
+        "id": 12,
+        "text": "While"
+      }
+    ],
+    "category": "Programming",
+    "marks": 15
+  },
+  {
+    "id": 5,
+    "question": "What is a memory efficient double linked list?",
+    "options": [
+      {
+        "id": 13,
+        "text": "Each node has only one pointer to traverse the list back and forth"
+      },
+      {
+        "id": 14,
+        "text": "A doubly linked list that uses bitwise AND operator for storing addresses"
+      },
+      {
+        "id": 15,
+        "text": "The list has breakpoints for faster traversal"
+      },
+      {
+        "id": 16,
+        "text": "An auxiliary singly linked list acts as a helper list to traverse through the doubly linked list"
+      }
+    ],
+    "category": "Programming",
+    "marks": 40
+  },
+  {
+    "id": 3,
+    "question": "What is Euclid's Algorithm used for",
+    "options": [
+      {
+        "id": 5,
+        "text": "For finding LCM of two numbers"
+      },
+      {
+        "id": 6,
+        "text": "For finding HCF of two numbers efficiently"
+      },
+      {
+        "id": 7,
+        "text": "For finding all prime factors of two numbers"
+      },
+      {
+        "id": 8,
+        "text": "For finding all co primes till a given number"
+      }
+    ],
+    "category": "Mathematics",
+    "marks": 30
+  },
+  {
+    "id": 4,
+    "question": "Which one of the following is a loop construct that will always be executed once?",
+    "options": [
+      {
+        "id": 9,
+        "text": "For"
+      },
+      {
+        "id": 10,
+        "text": "ForEach"
+      },
+      {
+        "id": 11,
+        "text": "Do While"
+      },
+      {
+        "id": 12,
+        "text": "While"
+      }
+    ],
+    "category": "Algorithm",
+    "marks": 15
+  },
+  {
+    "id": 5,
+    "question": "What is a memory efficient double linked list?",
+    "options": [
+      {
+        "id": 13,
+        "text": "Each node has only one pointer to traverse the list back and forth"
+      },
+      {
+        "id": 14,
+        "text": "A doubly linked list that uses bitwise AND operator for storing addresses"
+      },
+      {
+        "id": 15,
+        "text": "The list has breakpoints for faster traversal"
+      },
+      {
+        "id": 16,
+        "text": "An auxiliary singly linked list acts as a helper list to traverse through the doubly linked list"
+      }
+    ],
+    "category": "Designing",
+    "marks": 40
+  },
+  {
+    "id": 2,
+    "question": "What kind of language is C?",
+    "options": [
+      {
+        "id": 1,
+        "text": "OOPS"
+      },
+      {
+        "id": 2,
+        "text": "Functional"
+      },
+      {
+        "id": 3,
+        "text": "Procedural"
+      },
+      {
+        "id": 4,
+        "text": "Declarative"
+      }
+    ],
+    "category": "Algorithm",
+    "marks": 15
+  }
+]

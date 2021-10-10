@@ -1,0 +1,97 @@
+<div class="container" fxLayout="row" fxLayoutAlign="center none">
+  <div fxFlex="50%" fxFlex.lt-sm="100%">
+    <mat-card class="main-card">
+      <mat-card-content style="margin-top: 30px">
+        <form [formGroup]="registerForm">
+          <mat-form-field
+            fxFlexFill
+            class="example-full-width"
+            appearance="fill"
+          >
+            <mat-label>Name</mat-label>
+            <input
+              matInput
+              fxFlexFill
+              formControlName="name"
+              placeholder="What can we call you"
+            />
+          </mat-form-field>
+          <mat-form-field
+            fxFlexFill
+            class="example-full-width"
+            appearance="fill"
+          >
+            <mat-label>Phone</mat-label>
+            <input
+              matInput
+              fxFlexFill
+              formControlName="phone"
+              type="text"
+              placeholder="Where can we reach you"
+            />
+          </mat-form-field>
+          <mat-form-field
+            fxFlexFill
+            class="example-full-width"
+            appearance="fill"
+          >
+            <mat-label>College</mat-label>
+            <input
+              matInput
+              fxFlexFill
+              formControlName="college"
+              placeholder="Where did u graduate from"
+            />
+          </mat-form-field>
+
+          <mat-form-field
+            fxFlexFill
+            class="example-full-width"
+            appearance="fill"
+          >
+            <mat-label>Year</mat-label>
+
+            <mat-select
+              fxFlexFill
+              placeholder="When did you graduate"
+              formControlName="year"
+            >
+              <mat-option
+                value="option1"
+                [value]="year"
+                *ngFor="let year of years"
+                >{{ year }}</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field
+            fxFlexFill
+            class="example-full-width"
+            appearance="fill"
+          >
+            <mat-label>Branch</mat-label>
+            <input
+              matInput
+              fxFlexFill
+              formControlName="branch"
+              placeholder="Whats your specialization"
+            />
+          </mat-form-field>
+        </form>
+        <div fxFlexFill class="my-1">
+          <button
+            mat-flat-button
+            color="primary"
+            fxFlexFill
+            fxFlex="100%"
+            class="btn-park"
+            (click)="submitForm()"
+          >
+            {{ submitButtonTest }}
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

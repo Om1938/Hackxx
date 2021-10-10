@@ -1,0 +1,78 @@
+<div class="pad">
+  <mat-card style="height: calc(100vh - 125px)">
+    <div class="d-flex fd-row jc-se">
+      <circle-progress
+        [percent]="89"
+        [space]="-10"
+        [radius]="100"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="10"
+        [outerStrokeColor]="'#4882c2'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [title]="'Programming'"
+        [animationDuration]="1000"
+        [lazy]="false"
+      ></circle-progress>
+      <circle-progress
+        [percent]="49"
+        [space]="-10"
+        [radius]="100"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="10"
+        [outerStrokeColor]="'#4882c2'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [animationDuration]="1000"
+        [title]="'Designing'"
+        [lazy]="false"
+      ></circle-progress>
+      <circle-progress
+        [percent]="45"
+        [space]="-10"
+        [radius]="100"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="10"
+        [outerStrokeColor]="'#4882c2'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [animationDuration]="1000"
+        [title]="'Networking'"
+        [lazy]="false"
+      ></circle-progress>
+      <circle-progress
+        [percent]="85"
+        [space]="-10"
+        [radius]="100"
+        [outerStrokeWidth]="10"
+        [innerStrokeWidth]="10"
+        [outerStrokeColor]="'#4882c2'"
+        [innerStrokeColor]="'#e7e8ea'"
+        [animationDuration]="1000"
+        [title]="'Mathematics'"
+        [lazy]="false"
+      ></circle-progress>
+    </div>
+    <!-- <div class="d-flex fd-row jc-se"> -->
+    <mat-card class="my-1 py-2">
+      <div style="height: 300px">
+        <h1><strong>Path Forward</strong></h1>
+        <p style="font-size: large">
+          <em>
+            Thank you for taking the test, your score on programming and
+            mathematics shows your aptitude towards learning to become an
+            awesome coder. We have chosen the below learning path for you.</em
+          >
+        </p>
+      </div>
+    </mat-card>
+    <!-- </div> -->
+    <h1 style="margin-left: 40px">Recommended Path</h1>
+    <div class="d-flex fd-row jc-se" style="align-items: center">
+      <div class="block">Engineering</div>
+      <mat-icon>chevron_right</mat-icon>
+      <div class="block">Computer Science</div>
+      <mat-icon>chevron_right</mat-icon>
+      <div class="block">Programming & Problem solving</div>
+      <mat-icon>chevron_right</mat-icon>
+      <div class="block">Data Structures and Algorithms</div>
+    </div>
+  </mat-card>
+</div>
